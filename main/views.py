@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 from .models import ToDo, BookShop
 # Create your views here.
 def homepage(request):
@@ -18,3 +18,10 @@ def index_3(request):
 def books(request):
     bookshop_list = BookShop.objects.all()
     return render(request, "books.html", {"bookshop_list": bookshop_list})
+def add_todo(request):
+    form = request.POST
+    text = form["todo_text"]
+    todo = ToDo(text=text)
+    todo.save()
+    return redirect(test)
+
