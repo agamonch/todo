@@ -42,16 +42,25 @@ button{
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    
+         
 }
 button:active{
     border: 1px solid rgb(199, 22, 190);
     box-shadow: 2px 2px 5px 3px #ffbd06e7;
 }
-.bookplate{
+.bi.bi-book{
+    margin: -4px 3px;
+}
+.books_shelf{
     border: 2px solid orange;
-    margin: 20px 20px;
+    margin: 20px 2px;
     width: 75%;
     height: 600px;
-
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.bookplate{
+    border: 1px solid red;
 }
