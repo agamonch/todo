@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;    
+}
+body{
+    background-size: 10%;    
+    background-attachment: fixed;     
+} 
+section{
+    display: flex;
+}
+
+.input_book{
+    width: 20%;
+    height: 400px;   
+    padding: 15px 15px;
+    margin: 20px 20px;
+    align-items: center;
+    background-color: rgba(54, 56, 70, 0.63);
+    border: 2px solid rgb(9, 27, 105);
+    border-radius: 6px;
+}    
+input{
+    width: 95%;
+    height: 25px;
+    margin: 8px;
+    border: 1px solid purple;
+    border-radius: 4px;
+}
+h3{
+    margin: 5px 5px;
+    text-align: center;
+}
+button{
+    width: 65%;
+    height: 25px;
+    margin: 10px 42px;
+    border: 1px solid purple;
+    border-radius: 6px;
+    background-color: rgba(255, 166, 0, 0.904);
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+button:active{
+    border: 1px solid rgb(199, 22, 190);
+    box-shadow: 2px 2px 5px 3px #ffbd06e7;
+}
+.bookplate{
+    border: 2px solid orange;
+    margin: 20px 20px;
+    width: 75%;
+    height: 600px;
+
+}

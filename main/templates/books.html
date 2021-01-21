@@ -1,4 +1,4 @@
-{% load static %}
+<!-- {% load static %} -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,15 +6,38 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Book Shop</title>
+      <link rel="stylesheet" href="../static/styles/styles.css" />
     </head>
-    <body>
+    <body  background="../static/images/books6.jpg">
+      <section>
+        <div class="input_book">
+          <h3 style="color: rgb(255, 255, 255)">Заполните поля</h2>
+          
+          <input placeholder="Название книги" >
+          <input placeholder="Подзаголовок">
+          <input placeholder="Краткое описание">
+          <input placeholder="Цена">
+          <input placeholder="Жанр">
+          <input placeholder="Автор">
+          <input placeholder="Год издания">
+          <button>Добавить</button> 
+        </div>
+        <div class="bookplate">
+          <div>
+            
+          </div>
+
+        </div>
+      </section>
+      
+      
      
-        {% for bookshop in bookshop_list %} 
+        <!-- {% for bookshop in bookshop_list %} 
         <h2>Книга "{{ bookshop.book_title }}"</h2>
         <h3>{{ bookshop.description }}</h3>
         <h3>Автор {{ bookshop.author }}</h3> 
     
-        {% endfor %} 
+        {% endfor %}  -->
     
     </body>
 </html> 
