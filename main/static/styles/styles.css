@@ -71,7 +71,7 @@ button:active{
     background-color: rgba(54, 56, 70, 0.63);
     border-radius: 12px;
     text-align: center;
-    width: 30%;
+    width: 35%;
     height: 90px;
     margin: 5px;
     
@@ -79,14 +79,18 @@ button:active{
 
 
 .foot{
-    margin: -20px;
+    margin: -15px -5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 p{
     color: white;
 }
 span{
     color: white;
+}
+.head {
+    font-size: 18px;
 }
