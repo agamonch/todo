@@ -26,8 +26,9 @@ urlpatterns = [
     path("add/", index_1),
     path("change/", index_2),
     path("delete/", index_3),
-    path("books/", books),
+    path("books/", books, name="books"),
     path("add-todo/", add_todo, name="add-todo"),
+    path("add-book", add_book, name="add-book"),
    
 
 ]   + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \

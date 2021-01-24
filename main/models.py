@@ -13,7 +13,7 @@ class BookShop(models.Model):
     price = models.TextField()
     genre = models.TextField()
     author = models.TextField()
-    year = models.DateField()
+    year = models.TextField()
     date = models.TimeField(auto_now_add=True)
 
 

@@ -3,12 +3,12 @@
 }
 body{
     background-size: 10%;    
-    background-attachment: fixed;     
+    background-attachment: fixed;      
 } 
+
 section{
     display: flex;
 }
-
 .input_book{
     width: 20%;
     height: 400px;   
@@ -16,8 +16,8 @@ section{
     margin: 20px 20px;
     align-items: center;
     background-color: rgba(54, 56, 70, 0.63);
-    border: 2px solid rgb(9, 27, 105);
-    border-radius: 6px;
+    border: 2px solid rgba(255, 166, 0, 0.904);
+    border-radius: 12px;
 }    
 input{
     width: 95%;
@@ -34,7 +34,7 @@ button{
     width: 65%;
     height: 25px;
     margin: 10px 42px;
-    border: 1px solid purple;
+    border: 1px solid rgb(59, 4, 131);
     border-radius: 6px;
     background-color: rgba(255, 166, 0, 0.904);
     color: white;
@@ -52,15 +52,41 @@ button:active{
     margin: -4px 3px;
 }
 .books_shelf{
-    border: 2px solid orange;
     margin: 20px 2px;
     width: 75%;
     height: 600px;
-    padding: 30px 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
 .bookplate{
-    border: 1px solid red;
+    display: block;
+    background-image: url(../images/icon_book.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    border: 3px double rgba(255, 166, 0, 0.904);;
+    background-color: rgba(54, 56, 70, 0.63);
+    border-radius: 12px;
+    text-align: center;
+    width: 30%;
+    height: 90px;
+    margin: 5px;
+    
+}
+
+
+.foot{
+    margin: -20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+p{
+    color: white;
+}
+span{
+    color: white;
 }
