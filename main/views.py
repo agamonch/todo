@@ -33,3 +33,7 @@ def add_book(request):
     bookshop = BookShop(book_title=book_title, author=author, price=price)
     bookshop.save()
     return redirect(books)
+def delete_todo(request, id):
+    todo = ToDo.objects.get(id=id)
+    todo.delete()
+    return redirect(test)
