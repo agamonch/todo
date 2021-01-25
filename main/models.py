@@ -15,5 +15,6 @@ class BookShop(models.Model):
     author = models.TextField()
     year = models.TextField()
     date = models.TimeField(auto_now_add=True)
+    is_favorite1 = models.BooleanField(default=False)
 
 
