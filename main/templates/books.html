@@ -29,11 +29,19 @@
         </div>
         <div class="books_shelf">
           {% for bookshop in bookshop_list %}
-          <div class="bookplate">
+          <div class="bookplate 
+            {% if bookshop.is_favorite1 %}
+              marked
+            {% endif %}
+          ">
             <div class="head">
               <p>"{{ bookshop.book_title }}"</p>
               <div class="bookplate_icons">
-                <a><img width="20" src="{% static './icons/star.png' %}"></a>
+                {% if bookshop.is_favorite1 %}
+                  <a href="{% url 'unmark-books' bookshop.id %}" ><img width="20" src="{% static './icons/starfull.png' %}"></a>
+                {% else %}
+                  <a href="{% url 'mark-books' bookshop.id %}" ><img width="20" src="{% static './icons/star.png' %}"></a>
+                {% endif %}
                 <a href="{% url 'delete-books' bookshop.id %}" ><img width="20"src="{% static './icons/delete_1.png' %}"></a>
               </div>
             </div>

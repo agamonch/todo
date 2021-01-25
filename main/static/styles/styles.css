@@ -108,3 +108,7 @@ span{
     margin: 20px 10px 0 0;
     cursor: pointer;
 } 
+.bookplate.marked{
+    background-color: rgba(204, 98, 28, 0.918);
+    border: 3px solid rgb(0, 0, 100);
+}
