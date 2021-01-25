@@ -9,12 +9,7 @@
     <link rel="stylesheet" href="{% static 'styles/checkbox.css' %}" />
 </head>
 <body>
-    <!-- <h2>Это тестовая страница</h2>
-    <div>Версия 2</div>
-    {% for todo in todo_list %}
-        <h3>{{ todo.text }} - {{ todo.created_at }}</h3>
     
-    {% endfor %} -->
     <section>
         <div class="create_container">
             <form action="{% url 'add-todo' %}" method="POST">
@@ -46,7 +41,8 @@
                     <p>{{ todo.created_at }}<p>
                     <div class="action_buttons">
                         {% if todo.is_favorite %}
-                            <a href="{% url 'mark-todo' todo.id %}" ><img src="{% static './icons/starfull.png' %}"></a>
+                            <a href="{% url 'unmark-todo' todo.id %}" ><img src="{% static './icons/starfull.png' %}"></a>
+                       
                         {% else %}
                             <a href="{% url 'mark-todo' todo.id %}" ><img src="{% static './icons/4.png' %}"></a>
                         {% endif %}
