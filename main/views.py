@@ -67,5 +67,6 @@ def close_todo(request, id):
     todo.is_closed = not todo.is_closed
     todo.save()
     return redirect(test)
-def details(request):
-    return render(request, "books_detail.html")
+def details(request, id):
+    bookshop_list = BookShop.objects.get(id=id)
+    return render(request, "books_detail.html", {"bookshop_list": bookshop_list})

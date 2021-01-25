@@ -35,7 +35,7 @@
             {% endif %}
           ">
             <div class="head">
-              <p>"{{ bookshop.book_title }}"</p>
+              <p><a href="{% url 'details' bookshop.id %}">"{{ bookshop.book_title }}"</a></p>
               <div class="bookplate_icons">
                 {% if bookshop.is_favorite1 %}
                   <a href="{% url 'unmark-books' bookshop.id %}" ><img width="20" src="{% static './icons/starfull.png' %}"></a>

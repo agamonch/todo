@@ -96,6 +96,7 @@ span{
     
 }
 .head p{
+    color: white;
     font-size: 16px;
     margin: 24px auto 14px 45px;
     font-family: Arial, Helvetica, sans-serif;
@@ -119,10 +120,27 @@ span{
     background-repeat: no-repeat;
     background-position: 8px 15px;
     border: 3px double rgba(255, 166, 0, 0.904);;
-    background-color: rgba(54, 56, 70, 0.767);
+    background-color: rgba(54, 56, 70, 0.925);
     border-radius: 12px;
-    width: 30%;
+    width: 35%;
     height: 500px;
     margin: 50px 35%;
 
+}
+.book_detail h2, .book_detail h3{
+    color: rgb(219, 145, 48);
+    text-align: center;
+    
+}
+.book_detail p{
+    margin: 30px 25px;
+}
+.head a{
+    color: white;
+}
+.head a:active{
+    color: orange;
+}
+.head a:visited{
+    color: rgb(3, 3, 114);
 }

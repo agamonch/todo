@@ -1,24 +1,27 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/styles/styles.css" />
-    <title>Books detail</title>
+    <title>Detail</title>
 </head>
 <body background="../static/images/books7.jpg">
+    
     <div class="book_detail">
-        <h2></h2>
-        <h3></h3>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-
+        
+        <h2>"{{ bookshop_list.book_title }}"</h2>
+        <h3>{{ bookshop_list.subtitle}}</h3>
+        <p>{{ bookshop_list.description }}</p>
+        <p>Жанр - {{ bookshop_list.genre }}</p>
+        <p>Автор {{ bookshop_list.author }}</p>
+        <p>Год издания {{ bookshop_list.year }}</p>
+        <p>Цена - {{ bookshop_list.price }}</p>
+            
+    
     </div>
+    
     
 </body>
 </html>
