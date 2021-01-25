@@ -62,3 +62,8 @@ def unmark_books(request, id):
     bookshop.is_favorite1 = False
     bookshop.save()
     return redirect(books)
+def close_todo(request, id):
+    todo = ToDo.objects.get(id=id)
+    todo.is_closed = not todo.is_closed
+    todo.save()
+    return redirect(test)
