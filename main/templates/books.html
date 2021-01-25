@@ -34,7 +34,7 @@
               <p>"{{ bookshop.book_title }}"</p>
               <div class="bookplate_icons">
                 <a><img width="20" src="{% static './icons/star.png' %}"></a>
-                <img width="20"src="{% static './icons/delete_1.png' %}">
+                <a href="{% url 'delete-books' bookshop.id %}" ><img width="20"src="{% static './icons/delete_1.png' %}"></a>
               </div>
             </div>
             <div class="foot"><p>Автор {{ bookshop.author }}</p><span>Цена {{ bookshop.price }}</span>
